@@ -2,12 +2,11 @@
     "dependencies" : [
         {
             "url" : "https://github.com/jakeheis/Flock",
-            "version": "0.1.0"
-        }
-        ,  
+            "version": "0.1.1"
+        },  
         {   
-            "url" : "https://github.com/jakeheis/VaporFlock",
-            "version": "0.0.3"
+            "url" : "https://github.com/taji-taji/VaporFlock",
+            "version": "0.0.4"
         }
     ]
 }
