@@ -6,6 +6,6 @@ class Production: Configuration {
         if let key = ProcessInfo.processInfo.environment["FLOCK_KEY"] {
             Config.SSHAuthMethod = .key(key)
         }
-	Servers.add(ip: "192.168.33.10", user: "vagrant", roles: [.app, .db, .web])
+	Servers.add(ip: ProcessInfo.processInfo.environment["APP_HOST"] ?? "", user: "root", roles: [.app, .db, .web])
     }
 }
